@@ -1,4 +1,4 @@
 # spectrwm
 
 ## screenshots
-![inabakumori monochromatic](spectrwm/collage.png?raw=true)
+![inabakumori monochromatic](/assets/collage.png?raw=true)
