@@ -1,0 +1,98 @@
+
+configuration {
+  font:							"JetBrains Mono Nerd Font 10";
+    show-icons:                     true;
+    disable-history:                false;
+    fullscreen:                     false;
+        hide-scrollbar: 				true;
+        sidebar-mode: 					false;
+}
+
+@theme "/dev/null"
+
+* {
+  bg: #2b2b2b;
+  bg-alt: #2b2b2b;
+  bg-selected: #9e9e9e;
+
+  fg: #000000;
+  fg-alt: #000000; 
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+}
+
+* {
+  bg: #e0e0e0;
+  bg-alt: #bdbdbd;
+  bg-selected: #9e9e9e;
+
+  fg: #000000;
+  fg-alt: #000000;
+
+
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+}
+
+window {
+  width: 30%;
+  background-color: #b2b3b2;
+}
+
+element {
+  padding: 8 12;
+  background-color: transparent;
+  text-color: @fg-alt;
+}
+
+element selected {
+  text-color: @fg;
+  background-color: @bg-selected;
+}
+
+element-text {
+  background-color: transparent;
+  text-color: inherit;
+  vertical-align: 0.5;
+}
+
+element-icon {
+  size: 14;
+  padding: 0 10 0 0;
+  background-color: transparent;
+}
+
+entry {
+  padding: 12;
+  background-color: #bdbdbd;
+  text-color: @fg;
+}
+
+inputbar {
+  children: [prompt];
+  expand:                         false;
+  background-color: #bdbdbd;
+}
+
+listview {
+  columns: 1;
+  lines: 3;
+}
+
+mainbox {
+  children: [inputbar, listview];
+  background-color: #bdbdbd ;
+}
+
+prompt {
+  enabled: true;
+  padding: 12 0 0 12;
+  background-color: #bdbdbd ;
+  text-color: @fg;
+}
+
+/* vim: ft=sass
